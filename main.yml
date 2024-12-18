@@ -6,5 +6,5 @@
     - name: Print user and password variables
       ansible.builtin.debug:
         msg: 
-          - "Username is: {{ user }}"
+          - "Username is: {{ username }}"
           - "Password is: {{ password }}"
