@@ -1,0 +1,10 @@
+---
+- name: Test get secret from Hashicorp Vault
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Print user and password variables
+      ansible.builtin.debug:
+        msg: 
+          - "Username is: {{ user }}"
+          - "Password is: {{ password }}"
